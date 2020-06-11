@@ -10,7 +10,7 @@ Create a secret in the Kubernetes cluster to host your Digital Ocean personal ac
 
 ```
 kubectl create secret generic api --from-file=key=./do-apikey.txt
-``
+```
 
 Create the following Kubernetes object:
 
