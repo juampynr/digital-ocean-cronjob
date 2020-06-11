@@ -2,7 +2,7 @@
 
 This repository defines the Dockerfile used to create a Docker image with [doctl](https://github.com/digitalocean/doctl) and [kubectl](https://kubernetes.io/docs/reference/kubectl/kubectl/).
 
-It is meant to be used in Kubernetes cronjobs in order execute commands in a container.
+It is meant to be used in Kubernetes [CronJob](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/) objects in order execute commands in a container.
 
 ## Usage example
 
