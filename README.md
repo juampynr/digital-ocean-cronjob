@@ -6,6 +6,14 @@ It is meant to be used in Kubernetes [CronJob](https://kubernetes.io/docs/concep
 
 ## Usage example
 
+Create a secret in the Kubernetes cluster to host your Digital Ocean personal access token with permission to read:
+
+```
+kubectl create secret generic api --from-file=key=./do-apikey.txt
+``
+
+Create the following Kubernetes object:
+
 ```
 apiVersion: batch/v1beta1
 kind: CronJob
